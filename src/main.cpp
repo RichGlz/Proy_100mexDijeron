@@ -37,13 +37,18 @@
     // 
 
 void setup() {
+  // Interrupciones con LEDs
   attachInterrupt(digitalPinToInterrupt(_btnA),           btnA,           FALLING);
   attachInterrupt(digitalPinToInterrupt(_btnB),           btnB,           FALLING);
+
+  // Interrupciones con Sonidos 
   attachInterrupt(digitalPinToInterrupt(_btnRep_Aplausos),btnRep_Aplausos,FALLING);
   attachInterrupt(digitalPinToInterrupt(_btnRep_Inicio),  btnRep_Inicio,  FALLING);
   attachInterrupt(digitalPinToInterrupt(_btnRep_Inter),   btnRep_Inter,   FALLING);
   attachInterrupt(digitalPinToInterrupt(_btnRep_Buena),   btnRep_Buena,   FALLING);
   attachInterrupt(digitalPinToInterrupt(_btnRep_Error),   btnRep_Error,   FALLING);
+  
+  // Interrupciones con Sonidos
   attachInterrupt(digitalPinToInterrupt(_btnA),           btnA,           FALLING);
 
   
